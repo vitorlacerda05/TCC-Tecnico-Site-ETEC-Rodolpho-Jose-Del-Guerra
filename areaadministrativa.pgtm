@@ -1,0 +1,1759 @@
+<Project version="20.5.0.3" edition="lite" localizationFileName="C:\Program Files (x86)\SQL Maestro Group\PHP Generator for MySQL Lite\lang.br.php" phpDriver="2" outputPath="C:\wamp64\www\admin" copySystemFiles="true" generateModifiedDataOnly="true" outputFilesExtension="php" colorSchemeName="slate">
+  <ConnectionOptions host="localhost" port="3306" login="root" password="" database="phpbd" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ConnectionOptions>
+  <ScriptConnectionOptions host="localhost" port="3306" login="root" password="" database="phpbd" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ScriptConnectionOptions>
+  <DataSources>
+    <DataSource name="apm"/>
+    <DataSource name="cafe_intervalo"/>
+    <DataSource name="cardapio"/>
+    <DataSource name="cardapio_almoco"/>
+    <DataSource name="cardapio_janta"/>
+    <DataSource name="comunicados"/>
+    <DataSource name="concursos"/>
+    <DataSource name="cursos_tecnicos"/>
+    <DataSource name="downloads"/>
+    <DataSource name="estagio"/>
+    <DataSource name="eventos_futuros"/>
+    <DataSource name="gabarito"/>
+    <DataSource name="projetos"/>
+    <DataSource name="reunioes"/>
+    <DataSource name="slider"/>
+    <DataSource name="tcc"/>
+    <DataSource name="usuarios"/>
+    <DataSource name="vagas_remanescentes"/>
+  </DataSources>
+  <Presentation disableMagicQuotesRuntime="false" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false" enableInactivityTimeout="true" inactivityTimeoutInterval="5" setHomePageAsStartupPage="true" menuMode="1">
+    <Pages>
+      <Page type="table" tableName="usuarios" numberByDataSource="0" fileName="usuarios" caption="Usuarios" shortCaption="Usuarios" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_usuario" caption="Id Usuario" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nome" caption="Nome" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text"/>
+            <EditProperties type="textBox" maxLength="25"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="usuario" caption="Usuario" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text"/>
+            <EditProperties type="textBox" maxLength="20"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="senha" caption="Senha" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text"/>
+            <EditProperties type="textBox" maxLength="30"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_usuario"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </List>
+          <View>
+            <Column fieldName="id_usuario"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_usuario" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_usuario" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_usuario"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_usuario"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_usuario"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_usuario"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_usuario" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_usuario" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="usuario"/>
+            <Column fieldName="senha"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="slider" numberByDataSource="0" fileName="slider" caption="Slider" shortCaption="Slider" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_slider" caption="Id Slider" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="imagem" caption="Imagem" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="externalImage"/>
+            <EditProperties type="imageUploadToFolder" acceptableFileTypes="image/*" directoryToUpload="" generateRandomFileName="false" fileNameTemplate="%original_file_name%" replaceFilesIfExists="true" thumbnailResizeType="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nome_imagem" caption="Nome Imagem" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_slider"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </List>
+          <View>
+            <Column fieldName="id_slider"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_slider" visible="false"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_slider" visible="false"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_slider"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_slider"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_slider"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_slider"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_slider" visible="false"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_slider" visible="false"/>
+            <Column fieldName="imagem"/>
+            <Column fieldName="nome_imagem"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="projetos" numberByDataSource="0" fileName="projetos" caption="Projetos" shortCaption="Projetos" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_projeto" caption="Id Projeto" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nome_do_projeto" caption="Nome Do Projeto" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_projeto"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </List>
+          <View>
+            <Column fieldName="id_projeto"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_projeto" visible="false"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_projeto" visible="false"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_projeto"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_projeto"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_projeto"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_projeto"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_projeto" visible="false"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_projeto" visible="false"/>
+            <Column fieldName="nome_do_projeto"/>
+            <Column fieldName="descricao"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="apm" numberByDataSource="0" fileName="apm" caption="Apm" shortCaption="Apm" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_apm" caption="Id Apm" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="titulo" caption="Titulo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_apm"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </List>
+          <View>
+            <Column fieldName="id_apm"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_apm" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_apm" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_apm"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_apm"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_apm"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_apm"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_apm" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_apm" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="cursos_tecnicos" numberByDataSource="0" fileName="cursos_tecnicos" caption="Cursos Tecnicos" shortCaption="Cursos Tecnicos" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_curso" caption="Id Curso" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="titulo" caption="Titulo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_curso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </List>
+          <View>
+            <Column fieldName="id_curso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_curso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_curso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_curso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_curso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_curso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_curso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_curso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_curso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="downloads" numberByDataSource="0" fileName="downloads" caption="Downloads" shortCaption="Downloads" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_download" caption="Id Download" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="titulo" caption="Titulo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="arquivo" caption="Arquivo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_download"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </List>
+          <View>
+            <Column fieldName="id_download"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_download" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_download" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_download"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_download"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_download"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_download"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_download" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_download" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="arquivo"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="concursos" numberByDataSource="0" fileName="concursos" caption="Concursos" shortCaption="Concursos" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_concurso" caption="Id Concurso" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="titulo" caption="Titulo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="links" caption="Links" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_concurso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </List>
+          <View>
+            <Column fieldName="id_concurso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_concurso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_concurso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_concurso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_concurso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_concurso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_concurso"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_concurso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_concurso" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="links"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="estagio" numberByDataSource="0" fileName="estagio" caption="Estagio" shortCaption="Estagio" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_estagio" caption="Id Estagio" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nome_vaga" caption="Nome Vaga" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="vagas" caption="Vagas" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_estagio"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </List>
+          <View>
+            <Column fieldName="id_estagio"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_estagio" visible="false"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_estagio" visible="false"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_estagio"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_estagio"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_estagio"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_estagio"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_estagio" visible="false"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_estagio" visible="false"/>
+            <Column fieldName="nome_vaga"/>
+            <Column fieldName="vagas"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="gabarito" numberByDataSource="0" fileName="gabarito" caption="Gabarito" shortCaption="Gabarito" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_gabarito" caption="Id Gabarito" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="serie" caption="Serie" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="link" caption="Link" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_gabarito"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </List>
+          <View>
+            <Column fieldName="id_gabarito"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_gabarito" visible="false"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_gabarito" visible="false"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_gabarito"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_gabarito"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_gabarito"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_gabarito"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_gabarito" visible="false"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_gabarito" visible="false"/>
+            <Column fieldName="serie"/>
+            <Column fieldName="link"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="vagas_remanescentes" numberByDataSource="0" fileName="vagas_remanescentes" caption="Vagas Remanescentes" shortCaption="Vagas Remanescentes" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_vaga" caption="Id Vaga" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="titulo" caption="Titulo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_vaga"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </List>
+          <View>
+            <Column fieldName="id_vaga"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_vaga" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_vaga" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_vaga"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_vaga"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_vaga"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_vaga"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_vaga" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_vaga" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="descricao"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="reunioes" numberByDataSource="0" fileName="reunioes" caption="Reunioes" shortCaption="Reunioes" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_reuniao" caption="Id Reuniao" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nome_reuniao" caption="Nome Reuniao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="local" caption="Local" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="data" caption="Data" showColumnFilter="false" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="hora" caption="Hora" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="dateTime" dateTimeFormat="H:i:s" dateTimeKind="2"/>
+            <EditProperties type="time"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_reuniao"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </List>
+          <View>
+            <Column fieldName="id_reuniao"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_reuniao" visible="false"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_reuniao" visible="false"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_reuniao"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_reuniao"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_reuniao"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_reuniao"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_reuniao" visible="false"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_reuniao" visible="false"/>
+            <Column fieldName="nome_reuniao"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="hora"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="eventos_futuros" numberByDataSource="0" fileName="eventos_futuros" caption="Eventos Futuros" shortCaption="Eventos Futuros" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_evento" caption="Id Evento" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nome" caption="Nome" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="local" caption="Local" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="data" caption="Data" showColumnFilter="false" selectedFilterOperators="2031871">
+            <ViewProperties type="dateTime" dateTimeKind="1"/>
+            <EditProperties type="dateTime" dateTimeFormat="Y-m-d" dateTimeKind="1" firstDayOfWeek="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="horario" caption="Horario" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="dateTime" dateTimeFormat="H:i:s" dateTimeKind="2"/>
+            <EditProperties type="time"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_evento"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </List>
+          <View>
+            <Column fieldName="id_evento"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_evento" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_evento" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_evento"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_evento"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_evento"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_evento"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_evento" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_evento" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="local"/>
+            <Column fieldName="data"/>
+            <Column fieldName="horario"/>
+            <Column fieldName="descricao"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="tcc" numberByDataSource="0" fileName="tcc" caption="Tcc" shortCaption="Tcc" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_tcc" caption="Id Tcc" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nome" caption="Nome" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="arquivo" caption="Arquivo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="descricao" caption="Descricao" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="nomes_dos_desenvolvedores" caption="Nomes Dos Desenvolvedores" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_tcc"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </List>
+          <View>
+            <Column fieldName="id_tcc"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_tcc" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_tcc" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_tcc"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_tcc"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_tcc"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_tcc"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_tcc" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_tcc" visible="false"/>
+            <Column fieldName="nome"/>
+            <Column fieldName="arquivo"/>
+            <Column fieldName="descricao"/>
+            <Column fieldName="nomes_dos_desenvolvedores"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="comunicados" numberByDataSource="0" fileName="comunicados" caption="Comunicados" shortCaption="Comunicados" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_comunicado" caption="Id Comunicado" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="titulo" caption="Titulo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="comunicado" caption="Comunicado" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_comunicado"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </List>
+          <View>
+            <Column fieldName="id_comunicado"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_comunicado" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_comunicado" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_comunicado"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_comunicado"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_comunicado"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_comunicado"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_comunicado" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_comunicado" visible="false"/>
+            <Column fieldName="titulo"/>
+            <Column fieldName="comunicado"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="cardapio" numberByDataSource="0" fileName="cardapio" caption="Cardapio" shortCaption="Cardapio" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_cardapio" caption="Id Cardapio" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="id_intervalo" caption="Id Intervalo" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="cafe_intervalo" linkFieldName="id_intervalo" displayFieldName="segunda" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="id_almoco" caption="Id Almoco" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="cardapio_almoco" linkFieldName="id_almoco" displayFieldName="segunda" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="id_janta" caption="Id Janta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <Lookup tableName="cardapio_janta" linkFieldName="id_janta" displayFieldName="segunda" lookupFilter="" useLookupOrdering="true" lookupOrdering="0"/>
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="comboBox"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_cardapio"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </List>
+          <View>
+            <Column fieldName="id_cardapio"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_cardapio" visible="false"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_cardapio" visible="false"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_cardapio"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_cardapio"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_cardapio"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_cardapio"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_cardapio" visible="false"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_cardapio" visible="false"/>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="id_janta"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="cafe_intervalo" numberByDataSource="0" fileName="cafe_intervalo" caption="Cafe Intervalo" shortCaption="Cafe Intervalo" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_intervalo" caption="Id Intervalo" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="segunda" caption="Segunda" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="quarta" caption="Quarta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="quinta" caption="Quinta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="sexta" caption="Sexta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="terca" caption="Terca" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </List>
+          <View>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_intervalo" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_intervalo" visible="false"/>
+            <Column fieldName="segunda" visible="false"/>
+            <Column fieldName="quarta" visible="false"/>
+            <Column fieldName="quinta" visible="false"/>
+            <Column fieldName="sexta" visible="false"/>
+            <Column fieldName="terca" visible="false"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_intervalo"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_intervalo" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_intervalo" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="cardapio_almoco" numberByDataSource="0" fileName="cardapio_almoco" caption="Cardapio Almoco" shortCaption="Cardapio Almoco" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_almoco" caption="Id Almoco" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="segunda" caption="Segunda" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="quarta" caption="Quarta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="quinta" caption="Quinta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="sexta" caption="Sexta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="terca" caption="Terca" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </List>
+          <View>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_almoco" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_almoco" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_almoco"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_almoco" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_almoco" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="cardapio_janta" numberByDataSource="0" fileName="cardapio_janta" caption="Cardapio Janta" shortCaption="Cardapio Janta" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="id_janta" caption="Id Janta" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator=","/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="segunda" caption="Segunda" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="quarta" caption="Quarta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="quinta" caption="Quinta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="sexta" caption="Sexta" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="terca" caption="Terca" showColumnFilter="false" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textBox" maxLength="100"/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="id_janta"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </List>
+          <View>
+            <Column fieldName="id_janta"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </View>
+          <Edit>
+            <Column fieldName="id_janta" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="id_janta" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="id_janta"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="id_janta"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="id_janta"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Print>
+          <Export>
+            <Column fieldName="id_janta"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Export>
+          <Compare>
+            <Column fieldName="id_janta" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="id_janta" visible="false"/>
+            <Column fieldName="segunda"/>
+            <Column fieldName="quarta"/>
+            <Column fieldName="quinta"/>
+            <Column fieldName="sexta"/>
+            <Column fieldName="terca"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+    </Pages>
+    <UserAuthorization type="hardCoded" passwordEncryption="md5">
+      <Users>
+        <User name="coala" password="123"/>
+      </Users>
+    </UserAuthorization>
+    <UserGrants enableGuestAccess="false">
+      <UserGrant userName="defaultUser" select="1"/>
+      <UserGrant userName="guest"/>
+      <UserGrant userName="coala" select="1" insert="1" update="1" delete="1" admin="1"/>
+      <UserPageGrants>
+        <PageGrants userName="defaultUser">
+          <PageGrant pageName="usuarios"/>
+          <PageGrant pageName="slider"/>
+          <PageGrant pageName="projetos"/>
+          <PageGrant pageName="apm"/>
+          <PageGrant pageName="cursos_tecnicos"/>
+          <PageGrant pageName="downloads"/>
+          <PageGrant pageName="concursos"/>
+          <PageGrant pageName="estagio"/>
+          <PageGrant pageName="gabarito"/>
+          <PageGrant pageName="vagas_remanescentes"/>
+          <PageGrant pageName="reunioes"/>
+          <PageGrant pageName="eventos_futuros"/>
+          <PageGrant pageName="tcc"/>
+          <PageGrant pageName="comunicados"/>
+          <PageGrant pageName="cardapio"/>
+          <PageGrant pageName="cafe_intervalo"/>
+          <PageGrant pageName="cardapio_almoco"/>
+          <PageGrant pageName="cardapio_janta"/>
+        </PageGrants>
+        <PageGrants userName="guest">
+          <PageGrant pageName="usuarios"/>
+          <PageGrant pageName="slider"/>
+          <PageGrant pageName="projetos"/>
+          <PageGrant pageName="apm"/>
+          <PageGrant pageName="cursos_tecnicos"/>
+          <PageGrant pageName="downloads"/>
+          <PageGrant pageName="concursos"/>
+          <PageGrant pageName="estagio"/>
+          <PageGrant pageName="gabarito"/>
+          <PageGrant pageName="vagas_remanescentes"/>
+          <PageGrant pageName="reunioes"/>
+          <PageGrant pageName="eventos_futuros"/>
+          <PageGrant pageName="tcc"/>
+          <PageGrant pageName="comunicados"/>
+          <PageGrant pageName="cardapio"/>
+          <PageGrant pageName="cafe_intervalo"/>
+          <PageGrant pageName="cardapio_almoco"/>
+          <PageGrant pageName="cardapio_janta"/>
+        </PageGrants>
+        <PageGrants userName="coala">
+          <PageGrant pageName="usuarios"/>
+          <PageGrant pageName="slider"/>
+          <PageGrant pageName="projetos"/>
+          <PageGrant pageName="apm"/>
+          <PageGrant pageName="cursos_tecnicos"/>
+          <PageGrant pageName="downloads"/>
+          <PageGrant pageName="concursos"/>
+          <PageGrant pageName="estagio"/>
+          <PageGrant pageName="gabarito"/>
+          <PageGrant pageName="vagas_remanescentes"/>
+          <PageGrant pageName="reunioes"/>
+          <PageGrant pageName="eventos_futuros"/>
+          <PageGrant pageName="tcc"/>
+          <PageGrant pageName="comunicados"/>
+          <PageGrant pageName="cardapio"/>
+          <PageGrant pageName="cafe_intervalo"/>
+          <PageGrant pageName="cardapio_almoco"/>
+          <PageGrant pageName="cardapio_janta"/>
+        </PageGrants>
+      </UserPageGrants>
+    </UserGrants>
+    <Header/>
+    <Footer/>
+    <PHPOptions/>
+    <Groups>
+      <Group caption="No group"/>
+    </Groups>
+    <outgoingMailSettings mailer="0" fromEmail="" fromName=""/>
+  </Presentation>
+  <UserCSS/>
+  <PdfUserStyles/>
+  <PrintUserStyles/>
+  <UserJS/>
+  <ExcludedPaths/>
+  <DefaultPageProperties recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" multiEditAbility="0" quickEditAbility="3" deleteAbilityMode="3" contentEncoding="UTF-8" sortingByDialogAvailable="false" exportAllRecordsAvailable="0" exportSelectedRecordsAvailable="0" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="0" printAvailable="0" openPrintFormInNewTab="false" openExportedPdfInNewTab="false" filterBuilderAvailable="false" useActionImages="true" showKeyColumnsImagesInGridHeader="false" runtimeCustomizationAvailable="false" recordsComparisionAvailable="false" columnFilterAvailable="false"/>
+  <DefaultDataFormats numberAfterDecimal="4" DecimalSeparator="." ThousandSeparator="," DateTimeFormat="Y-m-d H:i:s" DateFormat="Y-m-d" firstDayOfWeek="0"/>
+</Project>
